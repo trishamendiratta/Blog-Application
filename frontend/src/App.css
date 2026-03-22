@@ -1,0 +1,230 @@
+/* =====================
+   Global / App Wrapper
+===================== */
+.App {
+  font-family: 'Poppins', sans-serif;
+  background-color: #bae3c6; /* soft light background */
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* =====================
+   Main Heading Box
+===================== */
+.main-heading {
+  display: inline-block;
+  background-color: #2e7d32; /* dark green box */
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   Form Styles (Login, Register, CreatePost)
+===================== */
+.form-container {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 0 auto 40px; /* center horizontally */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.03);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 8px rgba(46,125,50,0.2);
+}
+
+textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(45deg, #2e7d32, #81c784);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   Blog Post Cards (Home)
+===================== */
+.post {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 650px;
+  border-radius: 15px;
+  border-left: 5px solid #2e7d32;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+  margin: 0 0 10px 0;
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.post p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.post small {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* =====================
+   Links (Login/Register)
+===================== */
+a {
+  color: #0a0b0a;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+
+/* =====================
+   Responsive
+===================== */
+@media (max-width: 700px) {
+  input, textarea, .post, .form-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-heading {
+    font-size: 2rem;
+    padding: 15px 20px;
+  }
+}
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Info Box */
+.info-box {
+  background-color: #e8f5e9; 
+  border-left: 6px solid #2e7d32; 
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.info-box h3 {
+  margin: 0 0 10px 0;
+  color: #2e7d32;
+  font-size: 1.5rem;
+}
+
+.info-box p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Latest Post */
+.latest-post {
+  margin-bottom: 30px;
+}
+
+.latest-post h2 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  display: inline-block;
+}
+
+/* Other Posts */
+.other-posts h2 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  display: inline-block;
+}
+
+.post {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.post h3 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.post p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.post small {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Footer (already existing) */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
